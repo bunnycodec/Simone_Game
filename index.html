@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <link type="text/css" rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <div class="container-fluid">
+            <div class="simon text-center">
+                <h1>Simon Game</h1><hr />
+                <h3>Free Code Camp Project</h3>
+
+                <div>
+                    <button style="border-style: hidden;" id="one" class="dark1"></button>
+                    <button style="border-style: hidden;" id="two" class="dark2"></button>
+                </div>
+
+                <div>
+                    <button style="border-style: hidden;" id="three" class="dark3"></button>
+                    <button style="border-style: hidden;" id="four" class="dark4"></button>
+                </div>
+
+                <div class="text-center">
+                    <button id="start" class="bt btn">START</button>
+                    <button id="strict" class="bt btn">STRICT</button>
+                </div>
+                <div id="count"> -- </div>
+                <div>
+                    <button id="on" class="bt btn">ON</button>
+                    <button id="reset" class="bt btn">RESET</button>
+                </div>
+            </div>
+            
+            <footer class="text-center">
+                <h2>Designed & Coded by <span><a href="https://www.linkedin.com/in/sunny-kumar-340ab112a/" target="_blank">Sunny Kumar</a></span></h2>
+        </footer>
+            
+        </div>
+
+        <audio id="audio1">
+            <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="audio2">
+            <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="audio3">
+            <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" type="audio/mpeg">
+        </audio>
+        <audio id="audio4">
+            <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" type="audio/mpeg">
+        </audio>
+
+        <!-- jQuery first, then Tether, then Bootstrap JS. -->
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="java.js"></script>
+    </body>
+</html>
