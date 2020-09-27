@@ -83,19 +83,56 @@ body {
 }
 
 /* Footer */
-footer {
+.sunnyKumar {
     font-family: ‘Josefin Sans’, sans-serif;
-    position: relative;
     font-size: 120%;
     font-weight: normal;
     color: black;
 }
 
-footer a,
-footer a:hover,
-footer a:active,
-footer a:visited {
+.sunnyKumar a,
+.sunnyKumar a:hover,
+.sunnyKumar a:active,
+.sunnyKumar a:visited {
     color: #922031;
     text-decoration: none !important;
     outline: none !important;
+}
+
+.social-buttons a {
+    display: inline-flex;
+    text-decoration: none;
+    font-size: 100%;
+    width: 3rem;
+    height: 3rem;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.social-buttons a::before {
+    content: "";
+    position: absolute;
+    width: 3rem;
+    height: 3rem;
+    background: linear-gradient(45deg, #0A2342, #F679A7);
+    border-radius: 50%;
+    z-index: -1;
+    transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover::before {
+    transform: scale(0);
+}
+
+.social-buttons a i {
+    transition: 0.3s ease-in;
+}
+
+.social-buttons a:hover i {
+    background: linear-gradient(45deg, #0A2342, #F679A7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transform: scale(2.2);
 }
