@@ -1,32 +1,23 @@
 @import url('https://fonts.googleapis.com/css?family=Orbitron');
-.simon{
+@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
+
+body {
     background-color: #16a085;
-    height: auto;
-    width: 100%;
-    padding: 100px 50px;
     color: black;
-} 
-hr {
-    width: 60%;
-    border: none;
-    height: 2px;
-    background-color: #111; /* Modern Browsers */
-    margin-top: -6px;
 }
-h1{
-    font-size: 300%;
+
+.title {
+    font-family: 'Delius Swash Caps', cursive;
 }
-h3{
-    font-size: 200%;
-    margin-top: -10px;
-    margin-bottom: 40px;
+
+#one,
+#two,
+#three,
+#four {
+    height: 10rem;
+    width: 10rem;
 }
-#one, #two, #three, #four {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    margin: 0px20px;
-}
+
 .dark1 {
     background-color: #10b958;
 }
@@ -43,7 +34,6 @@ h3{
     background-color: #ff1c15;
 }
 
-
 .dark3 {
     background-color: #ffcc00;
 }
@@ -59,82 +49,53 @@ h3{
 .light4 {
     background-color: #000099;
 }
-#count{
-    font-family: 'Orbitron', sans-serif;
+
+#count {
+    font-family: 'Delius Swash Caps',
+    cursive;
     font-size: 30px;
-}
-footer{
-    background-color: black;
-}
-h2{
-    height: auto;
-    padding: 20px;
-    color: black;
-    font-size: 20px;
-    font-weight: 100;
-    color: rgb(52, 73, 94);
-}
-span{
-    font-size: 30px;
-    font-weight: 400;
-    color: rgb(192, 57, 43);
-}
-.bt {
-    width: 25%;
-    margin: 5px;
-    background-color: black;
-    color: white;
-    font-size: 12px;
-    cursor: pointer;
-    transition: transform 0.3s;
-}
-.bt:hover{
-    transform: scale(1.05,1.05);
-}
-a:hover, a:active, a:visited, a{
-    text-decoration: none;
-    color: rgb(192, 57, 43);
 }
 
-@media screen and (max-width: 500px){
-    hr {
-        width: 80%;
-        border: none;
-        height: 2px;
-        background-color: #111; /* Modern Browsers */
-        margin-top: -6px;
-    }
-    h1{
-        font-size: 200%;
-    }
-    h3{
-        font-size: 100%;
-        margin-top: -12px;
-        margin-bottom: 20px;
-    }
-    #one, #two, #three, #four {
-        height: 100px;
-        width: 100px;
-        border-radius: 50%;
-    }
-    .bt {
-        width: 50%;
-        margin: 3px;
-        background-color: black;
-        color: white;
-        font-size: 7px;
-    }
-    h2{
-        height: auto;
-        padding: 10px;
-        color: black;
-        font-size: 10px;
-        font-weight: 100;
-        color: rgb(52, 73, 94);
-    }
-    span{
-        font-size: 18px;
-        font-weight: 400;
-        color: rgb(192, 57, 43);
-    }
+.btnCSS {
+    border: none;
+    cursor: pointer;
+    background-size: 150%;
+    transition: 0.6s;
+}
+
+#start {
+    background-image: linear-gradient(to left, #2CA58D, #84BC9C, #F679A7);
+}
+
+#on {
+    background-image: linear-gradient(to left, #2CA58D, #84BC9C, #F679A7);
+}
+
+#reset {
+    background-image: linear-gradient(to left, #2CA58D, #84BC9C, #F679A7);
+}
+
+
+#start:hover,
+#on:hover,
+#reset:hover {
+    background-position: right;
+}
+
+/* Footer */
+footer {
+    font-family: ‘Josefin Sans’, sans-serif;
+    position: relative;
+    font-size: 120%;
+    font-weight: normal;
+    color: black;
+}
+
+footer a,
+footer a:hover,
+footer a:active,
+footer a:visited {
+    color: #922031;
+    text-decoration: none !important;
+    outline: none !important;
 }
